@@ -1,0 +1,114 @@
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "./variables";
+@import "./mixins";
+
+body {
+    font-family: $nav-font;
+}
+
+
+//nav//
+.navbar {
+    width: 100%;
+    height: 60px;
+    background: $bg_color;
+
+    a {
+        color: $nav_color;
+        font-size: 20px;
+        line-height: 20px;
+
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            color: $nav_color !important;
+        }
+}       
+    }
+    
+    .banner {
+        > div {
+            position: relative;
+            width: 100%;
+    
+            img {
+                //width: 100%;//
+                height: 400px;
+            }
+
+        h1 {
+            position: absolute;
+            top: 10%;
+            right: 50px;
+            color: $bg_color;
+        }
+        
+        h2 {
+            position: absolute;
+            top: 20%;
+            right: 50px;
+            color: $bg_color;
+        }
+
+        .btn {
+            position: absolute;
+            top: 30%;
+            right: 100px;
+            transform: translateX(1.2);
+            border-radius: 50px;
+
+            &:hover {
+                cursor: pointer;
+
+                a {
+                    text-decoration: none;
+                    color: $nav_color !important;
+                }
+            }
+        }
+    }
+}
+
+    //card//
+.sec-card {
+    height: 100%;
+   background: lightgray;
+    padding: 50px 0;   
+
+    .card-img-top {
+        background-color: teal;
+        transition: 0.3s;
+        opacity: 0.6;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    p {
+        font-size: 20px;
+
+        &::first-letter {
+            font-size: 40px;
+        }
+    }
+}
+
+    
+   //footer//
+.footer {
+    background: $bg_color;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+   
+    a {
+        text-decoration: none;
+        color: $nav_color !important;
+        font-weight: bold;
+    }
+    
+}
+    

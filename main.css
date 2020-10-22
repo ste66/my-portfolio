@@ -7164,7 +7164,7 @@ body {
 .navbar {
   width: 100%;
   height: 60px;
-  background: #ffc107; }
+  background: grey; }
   .navbar a {
     color: #03976b;
     font-size: 20px;
@@ -7172,7 +7172,7 @@ body {
     .navbar a:hover {
       transform: scale(1.2);
       cursor: pointer;
-      color: #03976b !important; }
+      color: #ffc107 !important; }
 
 .banner > div {
   position: relative;
@@ -7188,6 +7188,7 @@ body {
     position: absolute;
     top: 20%;
     right: 50px;
+    font-size: 25px;
     color: #ffc107; }
   .banner > div .btn {
     position: absolute;
@@ -7227,3 +7228,9 @@ body {
     text-decoration: none;
     color: #03976b !important;
     font-weight: bold; }
+
+@media screen and (max-width: 1000px) {
+  nav {
+    padding: 0 20px !important; }
+    nav .navbar-collapse {
+      background: #3d3d3d; } }

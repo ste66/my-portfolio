@@ -11,7 +11,7 @@ body {
 .navbar {
     width: 100%;
     height: 60px;
-    background: $bg_color;
+    background: grey;
 
     a {
         color: $nav_color;
@@ -21,7 +21,7 @@ body {
         &:hover {
             transform: scale(1.2);
             cursor: pointer;
-            color: $nav_color !important;
+            color: $bg_color !important;
         }
 }       
     }
@@ -47,6 +47,7 @@ body {
             position: absolute;
             top: 20%;
             right: 50px;
+            font-size: 25px;
             color: $bg_color;
         }
 
@@ -112,3 +113,11 @@ body {
     
 }
     
+@media screen and (max-width:1000px) {
+    nav{
+        padding: 0 20px !important;
+        .navbar-collapse {
+            background:rgb(61,61,61)
+        }
+    }
+}
